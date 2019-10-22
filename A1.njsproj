@@ -30,6 +30,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="routes\aboutme.js" />
+    <Compile Include="routes\contact.js" />
+    <Compile Include="routes\service.js" />
+    <Compile Include="routes\product.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Content Include="package.json" />
