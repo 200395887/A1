@@ -9,10 +9,10 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var routes = require('./routes/aboutme');
-var routes = require('./routes/service');
-var routes = require('./routes/project');
-var routes = require('./routes/contact');
+var aboutme = require('./routes/aboutme');
+var service = require('./routes/service');
+var product = require('./routes/product');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -32,7 +32,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/aboutme', aboutme);
 app.use('/service', service);
-app.use('/project', project);
+app.use('/product', product);
 app.use('/contact', contact);
 
 // catch 404 and forward to error handler
