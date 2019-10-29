@@ -1,0 +1,21 @@
+﻿extends layout
+
+block content
+  
+  .container
+  div(style='text-align:center')
+    h1 Contact Me
+  .row
+    .column
+        label(for='fname') First Name
+        input#fname(type='text' name='firstname' placeholder='Your name..')
+        label(for='lname') Last Name
+        input#lname(type='text' name='lastname' placeholder='Your last name..')
+        label(for='country') Country
+        select#country(name='country') 
+          option(value='canada') Canada
+          option(value='india') India
+          option(value='usa') USA
+        label(for='subject') Subject
+        textarea#subject(name='subject' placeholder='Write something..' style='height:170px')
+        input(type='submit' value='Submit')
